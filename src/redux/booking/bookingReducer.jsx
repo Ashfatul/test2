@@ -7,7 +7,7 @@ const bookingReducer = (state = initialState, action) => {
    switch (action.type) {
       case ADD_BOOKING: {
          const newBooking = {
-            id: state.length + 1,
+            id: state.length + 1 + Math.random() * 100,
             from: action.payload.from,
             to: action.payload.to,
             date: action.payload.date,
