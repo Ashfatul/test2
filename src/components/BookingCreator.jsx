@@ -36,6 +36,11 @@ const BookingCreator = () => {
             flightClass: bookingClass.value,
          };
          dispatch(addBookingNew(metadata));
+         bookingFrom.selectedIndex = 0;
+         bookingTo.selectedIndex = 0;
+         bookingDate.value = "";
+         bookingForGuests.selectedIndex = 0;
+         bookingClass.selectedIndex = 0;
       }
    };
    return (
